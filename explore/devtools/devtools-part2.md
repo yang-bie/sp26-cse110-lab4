@@ -1,0 +1,3 @@
+1. The bug was that `num1` was a string instead of a number. Since `num1` came from an input element using `.value`, JavaScript treated it as a string. Therefore, when the code did `num1 + num2`, it performed string concatenation instead of numeric addition. For example, `"1" + 2` became `"12"` instead of `3`.
+
+2. I would fix it by converting the input values to numbers before passing them into `calculateSum()`.
